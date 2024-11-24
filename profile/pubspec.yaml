@@ -56,6 +56,11 @@ flutter:
   assets:
     - assets/maradona.jpg
     - assets/aness.webp
+    - assets/quiz1.jpg
+    - assets/quiz2.jpg
+    - assets/quiz3.jpg
+    - assets/quiz4.jpg
+    - assets/quiz5.jpg
 
 
 
