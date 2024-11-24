@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() => runApp(const MyApp());
 
@@ -66,9 +67,9 @@ class ProfileHomePage extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const SizedBox(height: 60), // Space for avatar
+          const SizedBox(height: 60), // Espace pour l'avatar
           const Text(
-            "John Doe",
+            "Aness RABIA",
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
@@ -77,25 +78,25 @@ class ProfileHomePage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           const Text(
-            "Développeur Flutter",
+            "Data Engineer",
             style: TextStyle(
               fontSize: 16,
               color: Colors.grey,
             ),
           ),
           const SizedBox(height: 20),
-          _buildInfoRow(Icons.email, "john.doe@example.com"),
+          _buildInfoRow(Icons.email, "aness.rabia@gmail.com"),
           _buildInfoRow(Icons.phone, "+33 6 12 34 56 78"),
-          _buildInfoRow(Icons.location_on, "Paris, France"),
-          _buildInfoRow(Icons.link, "@johndoe"),
+          _buildInfoRow(Icons.location_on, "Montpellier, France"),
+          _buildInfoRow(Icons.link, "@anessrabia"),
           const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              _buildSocialIcon(Icons.public), // Replace Facebook
-              _buildSocialIcon(Icons.chat), // Replace Twitter
-              _buildSocialIcon(Icons.business), // Replace LinkedIn
-              _buildSocialIcon(Icons.code), // Replace GitHub
+              _buildSocialIcon(FontAwesomeIcons.github), // GitHub
+              _buildSocialIcon(FontAwesomeIcons.instagram), // Instagram
+              _buildSocialIcon(FontAwesomeIcons.twitter), // X
+              _buildSocialIcon(FontAwesomeIcons.facebook), // Facebook
             ],
           ),
         ],
@@ -124,7 +125,7 @@ class ProfileHomePage extends StatelessWidget {
       ),
       child: ClipOval(
         child: Image.asset(
-          'assets/maradona.jpg', // Ensure this path matches the actual location
+          'assets/aness.webp', // Image pour l'avatar
           fit: BoxFit.cover,
         ),
       ),
